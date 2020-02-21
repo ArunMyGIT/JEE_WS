@@ -1,0 +1,6 @@
+1) Generate CERT Filesa	
+	a) Self-Signed p12 Using Java Keytool
+	keytool -genkeypair -alias test -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore test.p12 -validity 3650
+	b) Self-Signed JKS Using Java Keytool
+	keytool -genkeypair -alias test -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore test.jks -validity 3650
+2) Check application.properties to see the SSL Configuration with above Keystore files Created. This is ONLY Enabling HTTPs
